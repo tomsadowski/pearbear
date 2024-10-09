@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "pb_fp")(type "KiCad")(uri "C:/Users/tsado/pearbear/footprints.pretty")(options "")(descr ""))
+)

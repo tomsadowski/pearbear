@@ -1,0 +1,195 @@
+(footprint "SW_TH_Tactile_Omron_B3F-10xx_reversible"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SW_TH_Tactile_Omron_B3F-10xx_https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
+	(tags "Omron B3F-10xx")
+	(property "Reference" "REF**"
+		(at 0 -4 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "16d466c8-5fd7-447c-811b-c8ca78d3780b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_Push"
+		(at 0 4 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d950d265-b74e-4e8c-804d-f1079c72c573")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Tom:SW_TH_Tactile_Omron_B3F-10xx_reversible"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9056bfa-74d6-4872-9d5e-ceccfd734e30")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d476751-1d27-4da8-8977-434cc958c9c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Push button switch, generic, two pins"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a4499962-34f1-4e74-8f3a-b3fbe1d4cea5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.35 -3.35)
+		(end -4.35 3.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b6e0d1ff-ed12-4cd7-90c7-b615a6ebe315")
+	)
+	(fp_line
+		(start -4.35 -3.35)
+		(end 4.35 -3.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c1565364-a3f6-40e7-a708-a0567cfcfccc")
+	)
+	(fp_line
+		(start -4.35 3.35)
+		(end 4.35 3.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "88257421-c5e8-42dd-a424-a73ad266916d")
+	)
+	(fp_line
+		(start 4.35 3.35)
+		(end 4.35 -3.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d2c77e6b-8367-469f-b731-1749b3ff5feb")
+	)
+	(fp_line
+		(start -3.25 -2.25)
+		(end -3.25 2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "67bed47d-cbe6-4b53-8312-694093f1c897")
+	)
+	(fp_line
+		(start -3.25 -2.25)
+		(end 3.25 -2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7aaca9b1-0ddc-4909-b3ac-392eb37e8808")
+	)
+	(fp_line
+		(start -3.25 2.25)
+		(end 3.25 2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "43afa923-5f30-4da3-b6de-b6aebbfaa8b2")
+	)
+	(fp_line
+		(start 3.25 -2.25)
+		(end 3.25 2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3d6c323d-4b3e-48ce-a097-17f926c68004")
+	)
+	(pad "1" thru_hole rect
+		(at -3.25 -2.25 180)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1ea26966-9aca-4b6d-9f81-bebfbaed1530")
+	)
+	(pad "1" thru_hole circle
+		(at 3.25 -2.25 180)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6fbd26d4-79db-4d83-8abc-0aad93c7be43")
+	)
+	(pad "2" thru_hole circle
+		(at -3.25 2.25 180)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "70d241e1-4d25-4a50-95c2-4760116fe707")
+	)
+	(pad "2" thru_hole circle
+		(at 3.25 2.25 180)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "26add8b8-0b92-4447-a76d-fcb2282f78d1")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-10xx.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
