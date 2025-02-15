@@ -1,5 +1,5 @@
 # Pearbear
-![pearbear_mx](pics/pearbear_mx.jpg)
+![pearbears](pics/pearbears.jpg)
 1) Choose a variant
   * [Cherry MX](/mx) for traditional key size and spacing
   * [Kailh Choc V1](/choc_v1) for small key size and spacing
