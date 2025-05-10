@@ -26,4 +26,4 @@
 4) Assembly
   * 1) Solder 3.a - 3.d to PCB (beginners guide pending)
   * 2) Stitch mousepad to PCB using 3.e
-5) Flash microcontrollers with [QMK firmware](https://github.com/tomsadowski/qmk_userspace/tree/main/keyboards/pearbear)
+5) Flash microcontrollers with [QMK firmware](https://github.com/tomsadowski/pearbear_qmk_firmware)
