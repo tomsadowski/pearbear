@@ -1,5 +1,5 @@
 # Pearbear
-![pearbears](pics/pearbears.jpg)
+![pearbears](pics/pearbearmxblack.jpg)
 2) Order the PCB
   * 1) Download the [specification file](mx/production/pearbear_mx.zip)
   * 2) Upload the file to a PCB [fabrication service](https://jlcpcb.com/)
