@@ -27,7 +27,7 @@
 #define COMBO_SHOULD_TRIGGER
 #define COMBO_TERM_PER_COMBO
 #define COMBO_STRICT_TIMER
-#define COMBO_TERM 40
+#define COMBO_TERM 32
 #define COMBO_ONLY_FROM_LAYER 0
 
 // Capswordery
