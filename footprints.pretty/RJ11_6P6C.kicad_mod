@@ -1,0 +1,187 @@
+(footprint "RJ11_6P6C"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "RJ11 6P6C  (6 positions 6 connected) TS6* connector through hole mount for reversible PCB")
+	(tags "RJ11 6P6C TS6* modular telephone connector reversible through hole THT")
+	(property "Reference" "J1"
+		(at 0 6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0dcdac5e-f6c8-4f68-9116-448d978d5aa8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "rj11"
+		(at 0 -8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d667062-2594-45a1-b158-1075bf01bdd2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "pb_fp:RJ11_6P6C"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "2b89841c-b500-4742-bcbc-6766386473cc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 2.87 -1.8 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d04c634-444c-4600-9bf0-cbd92396dbf8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1e92e80-fc64-4870-a88b-7d34b224bce9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -6.1 -8.77)
+		(end 6.1 -8.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f6f26fe8-ab78-426b-a45a-dae9c6ddfab9")
+	)
+	(fp_line
+		(start -6.1 8.77)
+		(end -6.1 -8.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "352209bf-512d-4b1a-a9d8-8d9bf428c3dd")
+	)
+	(fp_line
+		(start 6.1 8.77)
+		(end -6.1 8.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "61f0f0a2-acb5-4dc1-98ee-00da81ac17f5")
+	)
+	(fp_line
+		(start 6.1 8.77)
+		(end 6.1 -8.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9bc76886-c79e-407c-b738-8f9fc4f09ae9")
+	)
+	(pad "" np_thru_hole circle
+		(at -6 2.77 180)
+		(size 2.1 2.1)
+		(drill 2.1)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "de5c185f-0bfb-4aa8-8b58-71cceb82dddc")
+	)
+	(pad "" np_thru_hole circle
+		(at 6 2.77 180)
+		(size 2.1 2.1)
+		(drill 2.1)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "406d4641-e7f2-483d-b490-e37128443ac6")
+	)
+	(pad "1" thru_hole rect
+		(at 2.55 -2.07 180)
+		(size 1.46 1.46)
+		(drill 0.8)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "ee2b3dec-61cf-48d4-86b3-18dee238ac3c")
+	)
+	(pad "2" thru_hole circle
+		(at 1.53 0.47 180)
+		(size 1.46 1.46)
+		(drill 0.8)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "c71066e4-b40b-44d8-88b6-992acca56e71")
+	)
+	(pad "3" thru_hole circle
+		(at 0.51 -2.07 180)
+		(size 1.46 1.46)
+		(drill 0.8)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "daed0cd6-9fd1-488d-b134-80503be3b9fe")
+	)
+	(pad "4" thru_hole circle
+		(at -0.51 0.47 180)
+		(size 1.46 1.46)
+		(drill 0.8)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "32250acc-311e-4db6-81e3-a3b393f8d037")
+	)
+	(pad "5" thru_hole circle
+		(at -1.53 -2.07 180)
+		(size 1.46 1.46)
+		(drill 0.8)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "1def2b65-ccf6-4e9b-a715-aa704b8a599e")
+	)
+	(pad "6" thru_hole circle
+		(at -2.55 0.47 180)
+		(size 1.46 1.46)
+		(drill 0.8)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "2ed33e65-83cc-43b2-b822-8c25551cd3c0")
+	)
+	(model "${KISYS3DMOD}/Connector_RJ.3dshapes/RJ12_Amphenol_54601.wrl"
+		(offset
+			(xyz -3.13 16.77 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

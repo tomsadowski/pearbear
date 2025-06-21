@@ -936,7 +936,7 @@
 		)
 	)
 	(no_connect
-		(at 229.87 64.77)
+		(at 195.58 64.77)
 		(uuid "21af49d0-6ecc-4537-b28f-d3202beb85cf")
 	)
 	(global_label "Switch12"
@@ -1001,16 +1001,16 @@
 	)
 	(global_label "reset"
 		(shape input)
-		(at 229.87 69.85 0)
+		(at 195.58 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "18b22cbb-fc6e-40b6-b463-46f2a63a121e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 69.85 0)
+			(at 195.58 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1019,18 +1019,18 @@
 			)
 		)
 	)
-	(global_label "Switch11"
+	(global_label "Switch8"
 		(shape input)
-		(at 229.87 87.63 0)
+		(at 195.58 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1bb97e8e-9cf6-41f8-9f91-9ac2001940ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 87.63 0)
+			(at 195.58 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1159,38 +1159,38 @@
 			)
 		)
 	)
-	(global_label "Switch4"
+	(global_label "Switch6"
 		(shape input)
-		(at 194.31 74.93 180)
+		(at 231.14 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3596a1f4-ad39-4885-848a-15a0d7cf4b18")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.14 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Switch9"
+		(shape input)
+		(at 195.58 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3596a1f4-ad39-4885-848a-15a0d7cf4b18")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Switch16"
-		(shape input)
-		(at 229.87 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
 		(uuid "35b9ad0e-8f39-49f2-960e-be3ebc6c1433")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 90.17 0)
+			(at 195.58 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1199,18 +1199,18 @@
 			)
 		)
 	)
-	(global_label "Switch15"
+	(global_label "Switch3"
 		(shape input)
-		(at 229.87 77.47 0)
+		(at 195.58 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "391dbb07-cb56-4c1a-a3cc-539b6a64f443")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 77.47 0)
+			(at 195.58 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,40 +1399,40 @@
 			)
 		)
 	)
-	(global_label "Switch2"
+	(global_label "Switch12"
 		(shape input)
-		(at 194.31 80.01 180)
+		(at 231.14 80.01 0)
 		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5bbf4180-f1ee-42d9-9e15-d34293cf1a28")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.0072 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "gnd"
-		(shape input)
-		(at 229.87 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
+		(uuid "5bbf4180-f1ee-42d9-9e15-d34293cf1a28")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 242.6523 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "gnd"
+		(shape input)
+		(at 195.58 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
 		(uuid "5d2c0343-52c0-43d7-b6b5-b2148a7528a3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 67.31 0)
+			(at 195.58 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1481,38 +1481,18 @@
 			)
 		)
 	)
-	(global_label "Switch10"
+	(global_label "Switch4"
 		(shape input)
-		(at 229.87 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6867adb9-41ab-4ff6-9375-c00f92d575d1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Switch7"
-		(shape input)
-		(at 194.31 90.17 180)
+		(at 195.58 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "70542a16-929f-4d9d-89ce-502ff7c48c3b")
+		(uuid "6867adb9-41ab-4ff6-9375-c00f92d575d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 90.17 0)
+			(at 195.58 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1521,24 +1501,44 @@
 			)
 		)
 	)
-	(global_label "Switch17"
+	(global_label "Switch16"
 		(shape input)
-		(at 229.87 92.71 0)
-		(fields_autoplaced yes)
+		(at 231.14 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "779fbaa9-e04a-4672-9af1-33d8bf61752a")
+		(uuid "70542a16-929f-4d9d-89ce-502ff7c48c3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 241.3823 92.71 0)
+			(at 231.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Switch10"
+		(shape input)
+		(at 195.58 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "779fbaa9-e04a-4672-9af1-33d8bf61752a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.0677 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1585,16 +1585,16 @@
 	)
 	(global_label "gnd"
 		(shape input)
-		(at 194.31 69.85 180)
+		(at 231.14 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "90250990-c725-40c7-be89-c632f4905555")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 69.85 0)
+			(at 231.14 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1625,16 +1625,16 @@
 	)
 	(global_label "vcc"
 		(shape input)
-		(at 229.87 72.39 0)
+		(at 195.58 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "92e6dd06-79eb-43a6-af2e-f9945dbe65e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 72.39 0)
+			(at 195.58 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1663,18 +1663,18 @@
 			)
 		)
 	)
-	(global_label "Switch1"
+	(global_label "Switch13"
 		(shape input)
-		(at 194.31 82.55 180)
+		(at 231.14 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "951f71d1-2d44-4bad-a522-09abdd3afc26")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 82.55 0)
+			(at 231.14 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1685,16 +1685,16 @@
 	)
 	(global_label "raw"
 		(shape input)
-		(at 229.87 64.77 0)
+		(at 195.58 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "95b6d16f-c186-42b9-8aaf-324183d8d283")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 64.77 0)
+			(at 195.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1703,7 +1703,7 @@
 			)
 		)
 	)
-	(global_label "rjdata"
+	(global_label "vcc"
 		(shape input)
 		(at 208.28 113.03 0)
 		(effects
@@ -1725,56 +1725,16 @@
 	)
 	(global_label "gnd"
 		(shape input)
-		(at 194.31 72.39 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9eeeb022-4857-4727-8b19-8e7e78a1294c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Switch8"
-		(shape input)
-		(at 194.31 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a0d9a6e4-9788-42e8-ac0f-8a74fc4e2ebf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Switch13"
-		(shape input)
-		(at 229.87 82.55 0)
+		(at 231.14 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "a1101ea0-0643-4069-baf5-41ac3a574c41")
+		(uuid "9eeeb022-4857-4727-8b19-8e7e78a1294c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 82.55 0)
+			(at 231.14 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1783,18 +1743,58 @@
 			)
 		)
 	)
-	(global_label "Switch9"
+	(global_label "Switch15"
 		(shape input)
-		(at 194.31 85.09 180)
+		(at 231.14 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0d9a6e4-9788-42e8-ac0f-8a74fc4e2ebf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.14 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Switch1"
+		(shape input)
+		(at 195.58 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
+		(uuid "a1101ea0-0643-4069-baf5-41ac3a574c41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Switch14"
+		(shape input)
+		(at 231.14 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "a834e490-f232-4a66-bfb0-66ce2ba103dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 85.09 0)
+			(at 231.14 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1823,18 +1823,18 @@
 			)
 		)
 	)
-	(global_label "Switch14"
+	(global_label "Switch2"
 		(shape input)
-		(at 229.87 80.01 0)
+		(at 195.58 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "aafbcf34-ee6c-4809-9cdc-c7991468dbbe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 80.01 0)
+			(at 195.58 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1885,16 +1885,16 @@
 	)
 	(global_label "Switch5"
 		(shape input)
-		(at 194.31 64.77 180)
+		(at 231.14 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "b3520445-971b-4bca-9229-4ab43ab7e8fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 64.77 0)
+			(at 231.14 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,18 +1903,18 @@
 			)
 		)
 	)
-	(global_label "Switch12"
+	(global_label "Switch7"
 		(shape input)
-		(at 229.87 85.09 0)
+		(at 195.58 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b3e24da5-3a8f-43c2-a527-640894f65eb4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 85.09 0)
+			(at 195.58 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2025,7 +2025,7 @@
 			)
 		)
 	)
-	(global_label "vcc"
+	(global_label "rjdata"
 		(shape input)
 		(at 208.28 110.49 0)
 		(effects
@@ -2045,18 +2045,18 @@
 			)
 		)
 	)
-	(global_label "Switch6"
+	(global_label "Switch17"
 		(shape input)
-		(at 194.31 92.71 180)
+		(at 231.14 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "d3301fb0-b4f6-4d76-827e-76a9994d6b50")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 92.71 0)
+			(at 231.14 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2065,18 +2065,18 @@
 			)
 		)
 	)
-	(global_label "Switch3"
+	(global_label "Switch11"
 		(shape input)
-		(at 194.31 77.47 180)
+		(at 231.14 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "d8b1a361-c084-4302-99ac-2ea4d953afcc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 77.47 0)
+			(at 231.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2167,16 +2167,16 @@
 	)
 	(global_label "rjdata"
 		(shape input)
-		(at 194.31 67.31 180)
+		(at 231.14 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e8ae8fdd-bbf1-4cd5-9f0b-236c7e71914a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 67.31 0)
+			(at 231.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2267,7 +2267,8 @@
 	)
 	(symbol
 		(lib_id "misc:ProMicro-kbd-faceup")
-		(at 212.09 83.82 0)
+		(at 213.36 83.82 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2275,7 +2276,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006049d3fb")
 		(property "Reference" "U1"
-			(at 212.09 54.7878 0)
+			(at 213.36 54.7878 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2283,15 +2284,15 @@
 			)
 		)
 		(property "Value" "ProMicro-kbd-rev"
-			(at 212.09 57.4802 0)
+			(at 213.36 57.4802 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:kb2040"
-			(at 212.09 60.1726 0)
+		(property "Footprint" "pb_fp:ProMicro_reversible"
+			(at 213.36 60.1726 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2299,7 +2300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 110.49 0)
+			(at 210.82 110.49 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2307,7 +2308,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 83.82 0)
+			(at 213.36 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2421,7 +2422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 71.12 71.12 0)
 			(effects
 				(font
@@ -2488,7 +2489,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 95.25 52.07 0)
 			(effects
 				(font
@@ -2555,7 +2556,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 124.46 52.07 0)
 			(effects
 				(font
@@ -2622,7 +2623,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 148.59 52.07 0)
 			(effects
 				(font
@@ -2689,7 +2690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 172.72 52.07 0)
 			(effects
 				(font
@@ -2756,7 +2757,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 173.99 128.27 0)
 			(effects
 				(font
@@ -2823,7 +2824,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 198.12 128.27 0)
 			(effects
 				(font
@@ -2890,7 +2891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 73.66 95.25 0)
 			(effects
 				(font
@@ -2957,7 +2958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 97.79 76.2 0)
 			(effects
 				(font
@@ -3024,7 +3025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 124.46 76.2 0)
 			(effects
 				(font
@@ -3091,7 +3092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 148.59 76.2 0)
 			(effects
 				(font
@@ -3158,7 +3159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 172.72 76.2 0)
 			(effects
 				(font
@@ -3225,7 +3226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 76.2 121.92 0)
 			(effects
 				(font
@@ -3292,7 +3293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 100.33 101.6 0)
 			(effects
 				(font
@@ -3359,7 +3360,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 124.46 101.6 0)
 			(effects
 				(font
@@ -3426,7 +3427,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 148.59 101.6 0)
 			(effects
 				(font
@@ -3494,7 +3495,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:SW_Cherry_MX"
+		(property "Footprint" "pb_fp:SW_Cherry_MX_reversible"
 			(at 172.72 101.6 0)
 			(effects
 				(font
@@ -3561,7 +3562,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pb_fp:RJ11_6P6C"
+		(property "Footprint" "pb_fp:RJ11_6P6C_reversible"
 			(at 198.12 112.395 90)
 			(effects
 				(font

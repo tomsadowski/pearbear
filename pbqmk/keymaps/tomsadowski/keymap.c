@@ -217,7 +217,7 @@ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  _______, _______, _______, _______, _______,
 // - contains the mouse keys found in the mouse layer, but under the left hand
 [LNAV2_LYR] = LAYOUT_split_3x5_2(
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R, _______, _______, KC_ACL0, KC_ACL1, KC_ACL2, _______,
+KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R, _______, _______, _______, _______, _______, _______,
 KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R, _______, _______, _______, _______, _______, _______,
                            KC_BTN2, KC_BTN1, KC_SPC,  _______),
 // 2D game layer
@@ -278,11 +278,13 @@ KC_F11,  KC_F12,  KC_F13,  KC_F14,  _______, _______, KC_WH_L, KC_WH_D, KC_WH_U,
 bool get_permissive_hold(uint16_t keycode,
                          keyrecord_t* record)
 {
-    if (HOLD_MOUSE_TAP_SPACE)
+    switch (keycode)
     {
-        return true;
+        case HOLD_MOUSE_TAP_SPACE: 
+            return true;
+        default: 
+            return false;
     }
-    return false;
 }
 
 // HOLD_NUMBE_TAP_SPACE will go to number layer before TAPPING_TERM 
@@ -290,9 +292,11 @@ bool get_permissive_hold(uint16_t keycode,
 bool get_hold_on_other_key_press(uint16_t keycode,
                                  keyrecord_t* record)
 {
-    if (HOLD_NUMBE_TAP_SPACE)
+    switch (keycode)
     {
-        return true;
+        case HOLD_NUMBE_TAP_SPACE: 
+            return true;
+        default: 
+            return false;
     }
-    return false;
 }
