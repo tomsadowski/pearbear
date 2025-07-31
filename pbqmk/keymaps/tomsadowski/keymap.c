@@ -91,9 +91,12 @@ layer_state_t layer_state_set_user(layer_state_t state)
         case NUMBE_LYR ... LNAV2_LYR:
             caps_word_off();
             break;
-        case GAME2_LYR ... GAME3_LYR:
+        case GAME2_LYR:
             caps_word_off();
             combo_disable();
+            break;
+        case GAME3_LYR:
+            caps_word_off();
             break;
         default:
             break;
@@ -104,35 +107,35 @@ layer_state_t layer_state_set_user(layer_state_t state)
 combo_t key_combos[] =
 {
     // . 3 3 . .     . . 3 3 .
-    [TAB_CMB_L]    = COMBO(   tab_cmb_l, KC_TAB),
-    [TAB_CMB_R]    = COMBO(   tab_cmb_r, KC_TAB),
-    // . 2 2 . .     . . 2 2 .
-    [SHIFT_CMB_L]  = COMBO( shift_cmb_l, KC_LEFT_SHIFT),
-    [SHIFT_CMB_R]  = COMBO( shift_cmb_r, KC_RIGHT_SHIFT),
-    // . 1 1 . .     . . 1 1 .
-    [CAPS_CMB_L]   = COMBO(  caps_cmb_l, CAPS_ON),
-    [HOME_CMB_R]   = COMBO(  home_cmb_r, LAYOUT_HOME),
-    // 3 . . 3 .     . 3 . . 3
-    [ALT_CMB_L]    = COMBO(   alt_cmb_l, KC_LEFT_ALT),
-    [ALT_CMB_R]    = COMBO(   alt_cmb_r, KC_RIGHT_ALT),
-    // 2 . . 2 .     . 2 . . 2
-    [CTRL_CMB_L]   = COMBO(  ctrl_cmb_l, KC_LEFT_CTRL),
-    [CTRL_CMB_R]   = COMBO(  ctrl_cmb_r, KC_RIGHT_CTRL),
-    // 1 . . 1 .     . 1 . . 1
-    [LNAV2_CMB_L]  = COMBO( lnav2_cmb_l, TO(LNAV2_LYR)),
-    [MOUSE_CMB_R]  = COMBO( mouse_cmb_r, TO(MOUSE_LYR)),
-    // 2 . . . 2     2 . . . 2
-    [GAME3_CMB_L]  = COMBO( game3_cmb_l, TO(GAME3_LYR)),
-    [GAME2_CMB_R]  = COMBO( game2_cmb_r, TO(GAME2_LYR)),
-    // 3 . . 2 .     . 2 . . 3
-    [GUI_CMB_L]    = COMBO(   gui_cmb_l, KC_LEFT_GUI),
-    [GUI_CMB_R]    = COMBO(   gui_cmb_r, KC_RIGHT_GUI),
-    // 2 . . 1 .     . 1 . . 2
-    [LNAV1_CMB_L]  = COMBO( lnav1_cmb_l, TO(LNAV1_LYR)),
-    [NUMBE_CMB_R]  = COMBO( numbe_cmb_r, TO(NUMBE_LYR)),
-    // . . . 3 2     2 3 . . .
-    [ESC_CMB_L]    = COMBO(   esc_cmb_l, KC_ESCAPE),
-    [ENTER_CMB_R]  = COMBO( enter_cmb_r, KC_ENTER),
+    [TAB_CMB_L]   = COMBO(   tab_cmb_l, KC_TAB),
+    [TAB_CMB_R]   = COMBO(   tab_cmb_r, KC_TAB),
+    // . 2 2 . .    . . 2 2 .
+    [SHIFT_CMB_L] = COMBO( shift_cmb_l, KC_LEFT_SHIFT),
+    [SHIFT_CMB_R] = COMBO( shift_cmb_r, KC_RIGHT_SHIFT),
+    // . 1 1 . .    . . 1 1 .
+    [CAPS_CMB_L]  = COMBO(  caps_cmb_l, CAPS_ON),
+    [HOME_CMB_R]  = COMBO(  home_cmb_r, LAYOUT_HOME),
+    // 3 . . 3 .    . 3 . . 3
+    [ALT_CMB_L]   = COMBO(   alt_cmb_l, KC_LEFT_ALT),
+    [ALT_CMB_R]   = COMBO(   alt_cmb_r, KC_RIGHT_ALT),
+    // 2 . . 2 .    . 2 . . 2
+    [CTRL_CMB_L]  = COMBO(  ctrl_cmb_l, KC_LEFT_CTRL),
+    [CTRL_CMB_R]  = COMBO(  ctrl_cmb_r, KC_RIGHT_CTRL),
+    // 1 . . 1 .    . 1 . . 1
+    [LNAV2_CMB_L] = COMBO( lnav2_cmb_l, TO(LNAV2_LYR)),
+    [MOUSE_CMB_R] = COMBO( mouse_cmb_r, TO(MOUSE_LYR)),
+    // 2 . . . 2    2 . . . 2
+    [GAME3_CMB_L] = COMBO( game3_cmb_l, TO(GAME3_LYR)),
+    [GAME2_CMB_R] = COMBO( game2_cmb_r, TO(GAME2_LYR)),
+    // 3 . . 2 .    . 2 . . 3
+    [GUI_CMB_L]   = COMBO(   gui_cmb_l, KC_LEFT_GUI),
+    [GUI_CMB_R]   = COMBO(   gui_cmb_r, KC_RIGHT_GUI),
+    // 2 . . 1 .    . 1 . . 2
+    [LNAV1_CMB_L] = COMBO( lnav1_cmb_l, TO(LNAV1_LYR)),
+    [NUMBE_CMB_R] = COMBO( numbe_cmb_r, TO(NUMBE_LYR)),
+    // . . . 3 2    2 3 . . .
+    [ESC_CMB_L]   = COMBO(   esc_cmb_l, KC_ESCAPE),
+    [ENTER_CMB_R] = COMBO( enter_cmb_r, KC_ENTER),
 };
 
 // KC_ESCAPE breaks capsword, KC_SPACE does not
@@ -198,7 +201,7 @@ KC_GRV,  KC_BSLS, KC_SLSH, KC_MINS, _______, _______, KC_LEFT, KC_DOWN, KC_UP,  
 _______, KC_LBRC, KC_RBRC, KC_EQL,  _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
                            _______, _______, HOLD_ALPHA_TAP_SPACE_FROM_NUMBE,  _______),
 // mouse layer
-// - contains: function keys 1-14, printscreen, 
+// - contains: function keys 1-14, printscreen,
 // cursor direction/speed, scroll-wheel direction/speed,
 // left and right click
 [MOUSE_LYR] = LAYOUT_split_3x5_2(
@@ -239,10 +242,10 @@ _______, _______, _______, _______, KC_ESCAPE,KC_ENTER, _______, _______, ______
 //  - KC_BTN1, KC_BTN2, replaces HOLD_NUMBE_TAP_SPACE, KC_DEL respectively
 //  - KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R replaces KC_E, KC_I, KC_O, KC_N respectively
 [GAME3_LYR] = LAYOUT_split_3x5_2(
-_______, _______, _______, _______, _______,  _______,  _______, _______, _______, _______,
-_______, _______, _______, _______, _______,  _______,  KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
-_______, _______, _______, _______, KC_ESCAPE,KC_ENTER, _______, _______, _______, _______,
-                           _______, KC_SPC,   KC_BTN1,  KC_BTN2),
+_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+_______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
+_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+                           _______, KC_SPC,  KC_BTN1, KC_BTN2),
 // alpha-from-number layer
 // - alpha layer momentarily accessed from number layer
 [ALPHA_FROM_NUMBE_LYR] = LAYOUT_split_3x5_2(
@@ -273,30 +276,30 @@ KC_F11,  KC_F12,  KC_F13,  KC_F14,  _______, _______, KC_WH_L, KC_WH_D, KC_WH_U,
                            _______, _______, KC_BTN1, KC_BTN2),
 };
 
-// HOLD_MOUSE_TAP_SPACE will go to mouse layer before TAPPING_TERM elapses 
+// HOLD_MOUSE_TAP_SPACE will go to mouse layer before TAPPING_TERM elapses
 // if another key is pressed then released
 bool get_permissive_hold(uint16_t keycode,
                          keyrecord_t* record)
 {
     switch (keycode)
     {
-        case HOLD_MOUSE_TAP_SPACE: 
+        case HOLD_MOUSE_TAP_SPACE:
             return true;
-        default: 
+        default:
             return false;
     }
 }
 
-// HOLD_NUMBE_TAP_SPACE will go to number layer before TAPPING_TERM 
+// HOLD_NUMBE_TAP_SPACE will go to number layer before TAPPING_TERM
 // elapses if another key is pressed
 bool get_hold_on_other_key_press(uint16_t keycode,
                                  keyrecord_t* record)
 {
     switch (keycode)
     {
-        case HOLD_NUMBE_TAP_SPACE: 
+        case HOLD_NUMBE_TAP_SPACE:
             return true;
-        default: 
+        default:
             return false;
     }
 }
