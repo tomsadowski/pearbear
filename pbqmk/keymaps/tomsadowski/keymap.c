@@ -26,8 +26,8 @@ const uint16_t PROGMEM   ctrl_cmb_r[] = {KC_E,    KC_N,    COMBO_END};
 const uint16_t PROGMEM  lnav2_cmb_l[] = {KC_J,    KC_D,    COMBO_END};
 const uint16_t PROGMEM  mouse_cmb_r[] = {KC_U,    KC_Q,    COMBO_END};
 //                           3 . . . 3          3 . . . 3
-const uint16_t PROGMEM  game3_cmb_l[] = {KC_K,    KC_X,    COMBO_END};
-const uint16_t PROGMEM  game2_cmb_r[] = {KC_Z,    KC_V,    COMBO_END};
+const uint16_t PROGMEM  game2_cmb_l[] = {KC_K,    KC_X,    COMBO_END};
+const uint16_t PROGMEM  game3_cmb_r[] = {KC_Z,    KC_V,    COMBO_END};
 //                           3 . . 2 .          . 2 . . 3
 const uint16_t PROGMEM    gui_cmb_l[] = {KC_T,    KC_K,    COMBO_END};
 const uint16_t PROGMEM    gui_cmb_r[] = {KC_E,    KC_V,    COMBO_END};
@@ -53,7 +53,7 @@ enum combos
     // 1 . . 1 .     . 1 . . 1
     LNAV2_CMB_L,   MOUSE_CMB_R,
     // 3 . . . 3     3 . . . 3
-    GAME3_CMB_L,   GAME2_CMB_R,
+    GAME2_CMB_L,   GAME3_CMB_R,
     // 3 . . 2 .     . 2 . . 3
     GUI_CMB_L,     GUI_CMB_R,
     // 2 . . 1 .     . 1 . . 2
@@ -97,6 +97,7 @@ layer_state_t layer_state_set_user(layer_state_t state)
             break;
         case GAME3_LYR:
             caps_word_off();
+            combo_disable();
             break;
         default:
             break;
@@ -125,8 +126,8 @@ combo_t key_combos[] =
     [LNAV2_CMB_L] = COMBO( lnav2_cmb_l, TO(LNAV2_LYR)),
     [MOUSE_CMB_R] = COMBO( mouse_cmb_r, TO(MOUSE_LYR)),
     // 2 . . . 2    2 . . . 2
-    [GAME3_CMB_L] = COMBO( game3_cmb_l, TO(GAME3_LYR)),
-    [GAME2_CMB_R] = COMBO( game2_cmb_r, TO(GAME2_LYR)),
+    [GAME2_CMB_L] = COMBO( game2_cmb_l, TO(GAME2_LYR)),
+    [GAME3_CMB_R] = COMBO( game3_cmb_r, TO(GAME3_LYR)),
     // 3 . . 2 .    . 2 . . 3
     [GUI_CMB_L]   = COMBO(   gui_cmb_l, KC_LEFT_GUI),
     [GUI_CMB_R]   = COMBO(   gui_cmb_r, KC_RIGHT_GUI),
@@ -198,16 +199,16 @@ KC_J,    KC_F,    KC_L,    KC_D,    KC_QUOT,  KC_SCLN, KC_U,    KC_M,    KC_G,  
 [NUMBE_LYR] = LAYOUT_split_3x5_2(
 KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
 KC_GRV,  KC_BSLS, KC_SLSH, KC_MINS, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
-_______, KC_LBRC, KC_RBRC, KC_EQL,  _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
+KC_INS,  KC_LBRC, KC_RBRC, KC_EQL,  _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
                            _______, _______, HOLD_ALPHA_TAP_SPACE_FROM_NUMBE,  _______),
 // mouse layer
-// - contains: function keys 1-14, printscreen,
+// - contains: function keys 1-13, printscreen,
 // cursor direction/speed, scroll-wheel direction/speed,
 // left and right click
 [MOUSE_LYR] = LAYOUT_split_3x5_2(
 KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,
-KC_PSCR, KC_ACL2, KC_ACL1, KC_ACL0, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
-KC_F11,  KC_F12,  KC_F13,  KC_F14,  _______, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R,
+KC_BTN6, KC_BTN5, KC_BTN4, KC_BTN3, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
+KC_F11,  KC_F12,  KC_F13,  KC_PSCR, _______, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R,
 _______, HOLD_ALPHA_TAP_SPACE_FROM_MOUSE,    KC_BTN1, KC_BTN2),
 // lnav1 layer
 // - contains the navigation keys found in the number layer, but under the left hand
@@ -231,10 +232,10 @@ KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R, _______, _______, _______, _______, _______,
 //  - KC_ESCAPE replaces KC_QUOTE
 //  - KC_ENTER replaces KC_SCLN
 [GAME2_LYR] = LAYOUT_split_3x5_2(
-_______, _______, _______, _______, _______,  _______,  _______, _______, _______, _______,
-_______, _______, _______, _______, _______,  _______,  _______, _______, _______, _______,
-_______, _______, _______, _______, KC_ESCAPE,KC_ENTER, _______, _______, _______, _______,
-                           _______, KC_SPC,   KC_0,     _______),
+_______, _______, _______, _______, _______,  _______, _______, _______, _______, _______,
+_______, _______, _______, _______, _______,  _______, _______, _______, _______, _______,
+_______, _______, _______, _______, KC_ESC,   KC_ENT,  _______, _______, _______, _______,
+                           _______, KC_SPC,   KC_0,    _______),
 // 3D game layer
 // - same as alpha layer with the following exceptions:
 //  - combos deactivated
@@ -244,7 +245,7 @@ _______, _______, _______, _______, KC_ESCAPE,KC_ENTER, _______, _______, ______
 [GAME3_LYR] = LAYOUT_split_3x5_2(
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
-_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+_______, _______, _______, _______, KC_ESC,  KC_ENT,  _______, _______, _______, _______,
                            _______, KC_SPC,  KC_BTN1, KC_BTN2),
 // alpha-from-number layer
 // - alpha layer momentarily accessed from number layer
@@ -265,14 +266,14 @@ KC_J,   KC_F,     KC_L,    KC_D,    _______, _______, KC_U,    KC_M,    KC_G,   
 [NUMBE_FROM_OTHER_LYR] = LAYOUT_split_3x5_2(
 KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
 KC_GRV,  KC_BSLS, KC_SLSH, KC_MINS, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
-_______, KC_LBRC, KC_RBRC, KC_EQL,  _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
+KC_INS,  KC_LBRC, KC_RBRC, KC_EQL,  _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
                            _______, KC_SPC,  _______, _______),
 // mouse-from-other layer
 // - mouse layer momentarily accessed from alpha layer or number layer
 [MOUSE_FROM_OTHER_LYR] = LAYOUT_split_3x5_2(
 KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,
-KC_PSCR, KC_ACL2, KC_ACL1, KC_ACL0, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
-KC_F11,  KC_F12,  KC_F13,  KC_F14,  _______, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R,
+KC_BTN6, KC_BTN5, KC_BTN4, KC_BTN3, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,
+KC_F11,  KC_F12,  KC_F13,  KC_PSCR, _______, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R,
                            _______, _______, KC_BTN1, KC_BTN2),
 };
 

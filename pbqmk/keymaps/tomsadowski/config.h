@@ -10,19 +10,15 @@
 
 
 // Mousery
-// #define MK_COMBINED
-// #define MOUSEKEY_MOVE_DELTA 7
-// #define MOUSEKEY_TIME_TO_MAX 48
-// #define MOUSEKEY_MAX_SPEED 8
 #define MOUSEKEY_INERTIA
 #define MOUSEKEY_MOVE_DELTA 1
-#define MOUSEKEY_FRICTION 4
-#define MOUSEKEY_TIME_TO_MAX 10
- #define MOUSEKEY_MAX_SPEED 20
+#define MOUSEKEY_TIME_TO_MAX 24 // frames to max
+#define MOUSEKEY_MAX_SPEED 32
+#define MOUSEKEY_FRICTION 128
 
- #define MOUSEKEY_OVERLAP_RESET
- #define MOUSEKEY_DELAY 0
- #define MOUSEKEY_INTERVAL 16
+#define MOUSEKEY_OVERLAP_RESET
+#define MOUSEKEY_DELAY 0
+#define MOUSEKEY_INTERVAL 16 // 16 milliseconds = 60 fps
 
 
 // Mousewheelery
