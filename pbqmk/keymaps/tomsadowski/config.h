@@ -1,46 +1,43 @@
 #pragma once
 
+// undefine
 #undef  LOCKING_SUPPORT_ENABLE
 #undef  LOCKING_RESYNC_ENABLE
 
+// oneshot
 #define NO_ACTION_ONESHOT
 
-// Layery
+// layer
 #define LAYER_STATE_16BIT
 
-
-// Mousery
+// mousekey
 #define MOUSEKEY_INERTIA
-#define MOUSEKEY_MOVE_DELTA 1
-#define MOUSEKEY_TIME_TO_MAX 22
-#define MOUSEKEY_MAX_SPEED 22
-#define MOUSEKEY_FRICTION 255
-
 #define MOUSEKEY_OVERLAP_RESET
 #define MOUSEKEY_DELAY 0
-#define MOUSEKEY_INTERVAL 16 // 16 milliseconds = 60 fps
+#define MOUSEKEY_MOVE_DELTA 1
+#define MOUSEKEY_TIME_TO_MAX 30
+#define MOUSEKEY_MAX_SPEED 32
+#define MOUSEKEY_FRICTION 255
+#define MOUSEKEY_INTERVAL 16
 
-
-// Mousewheelery
+// mousewheel
 #define MOUSEKEY_WHEEL_DELAY 0
 #define MOUSEKEY_WHEEL_MOVE_DELTA 1
 #define MOUSEKEY_WHEEL_INTERVAL 80
 #define MOUSEKEY_WHEEL_MAX_SPEED 8
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 128
 
-// Combory
+// combo
 #define EXTRA_SHORT_COMBOS
-#define COMBO_SHOULD_TRIGGER
-#define COMBO_TERM_PER_COMBO
 #define COMBO_STRICT_TIMER
-#define COMBO_TERM 32
 #define COMBO_ONLY_FROM_LAYER 0
+#define COMBO_TERM 32
 
-// Capswordery
+// capsword
 #define CAPS_WORD_INVERT_ON_SHIFT
 #define CAPS_WORD_IDLE_TIMEOUT 0
 
-// Tappery
+// tap
 #define PERMISSIVE_HOLD_PER_KEY
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 #define TAPPING_TERM 250
