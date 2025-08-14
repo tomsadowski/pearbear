@@ -229,7 +229,7 @@ KC_WH_L,KC_WH_U,KC_WH_D,KC_WH_R,_______,_______,_______,_______,_______,_______,
 [GAME2_LYR] = LAYOUT_split_3x5_2
 (
 KC_A   ,KC_W   ,KC_S   ,KC_D   ,_______,_______,_______,KC_C   ,_______,_______,
-KC_LEFT,KC_UP,  KC_DOWN,KC_RGHT,_______,KC_H   ,_______,_______,_______,_______,
+KC_LEFT,KC_UP,  KC_DOWN,KC_RGHT,KC_0   ,KC_H   ,_______,_______,_______,_______,
 _______,_______,_______,KC_B   ,KC_ESC ,KC_ENT ,_______,_______,_______,_______,
                         KC_K   ,KC_SPC ,KC_R   ,KC_T
 ),
