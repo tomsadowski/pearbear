@@ -71,20 +71,23 @@ enum custom_keycodes
 enum layers
 {
     // standard
-    ALPHA_LYR,
-    NUMBE_LYR,
-    MOUSE_LYR,
+    ALPHA_LYR, // alpha keys
+    NUMBE_LYR, // number, arrow, misc keys
+    MOUSE_LYR, // mouse, function keys
+
     // lefty
-    LNAV1_LYR,
-    LNAV2_LYR,
-    // game (no return)
-    GAME2_LYR,
-    GAME3_LYR,
+    LNAV1_LYR, // arrows under left hand
+    LNAV2_LYR, // mouse under left hand
+
+    // game (no combos / no outlet)
+    GAME2_LYR, // 2D game functionality
+    GAME3_LYR, // 3D game functionality
+
     // momentary
-    AFN_LYR,
-    AFM_LYR,
-    NFA_LYR,
-    MFA_LYR,
+    AFN_LYR,   // Alpha From Number
+    AFM_LYR,   // Alpha From Mouse
+    NFA_LYR,   // Number From Alpha
+    MFA_LYR,   // Mouse From Alpha
 };
 
 // switching to non-alpha layers breaks capsword
@@ -208,8 +211,8 @@ KC_INS ,KC_LBRC,KC_RBRC,KC_EQL ,_______,_______,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,
 [MOUSE_LYR] = LAYOUT_split_3x5_2
 (
 KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,
-KC_BTN6,KC_BTN5,KC_BTN4,KC_BTN3,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
-KC_F11 ,KC_F12 ,KC_F13 ,KC_PSCR,_______,_______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,
+KC_PSCR,KC_BTN5,KC_BTN4,KC_BTN3,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
+KC_F11 ,KC_F12 ,KC_F13 ,KC_F14 ,_______,_______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,
                         _______,MTA_SPC,KC_BTN1,KC_BTN2
 ),
 [LNAV1_LYR] = LAYOUT_split_3x5_2
@@ -265,8 +268,8 @@ KC_INS ,KC_LBRC,KC_RBRC,KC_EQL ,_______,_______,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,
 [MFA_LYR] = LAYOUT_split_3x5_2
 (
 KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,
-KC_BTN6,KC_BTN5,KC_BTN4,KC_BTN3,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
-KC_F11 ,KC_F12 ,KC_F13 ,KC_PSCR,_______,_______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,
+KC_PSCR,KC_BTN5,KC_BTN4,KC_BTN3,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
+KC_F11 ,KC_F12 ,KC_F13 ,KC_F14 ,_______,_______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,
                         _______,_______,KC_BTN1,KC_BTN2
 ),
 };
