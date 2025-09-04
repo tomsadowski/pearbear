@@ -18,6 +18,7 @@ Note: Since holding down the left-click button is a common use case, you must fi
 ## Combos  
 The caps-lock combo only turns caps-lock on. Caps-lock is turned off when a modifier or layer-switching combo is pressed.   
 ![combos](pics/combos_middle_ring.png)  
+![combos](pics/combos_pointer_middle.png)  
 ![combos](pics/combos_pointer_pinky_1.png)  
 ![combos](pics/combos_pointer_pinky_2.png)  
 ![combos](pics/combos_pointer_pinky_3.png)  
