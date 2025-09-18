@@ -1,4 +1,4 @@
-# pearbear keymap
+# keymap
 
 ## Layers    
 There are 3 layers: Alpha Layer, Mouse Layer, and Number Layer. From any of those three layers, the other two layers can be momentarily accessed by pressing and holding either of the space buttons.
