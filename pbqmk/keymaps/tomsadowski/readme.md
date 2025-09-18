@@ -1,6 +1,6 @@
 # pearbear keymap
 
-## Layers:    
+## Layers    
 There are 3 layers: Alpha Layer, Mouse Layer, and Number Layer. From any of those three layers, the other two layers can be momentarily accessed by pressing and holding either of the space buttons.
 
 ### Alpha Layer
@@ -14,7 +14,7 @@ Note: Since holding down the left-click button is a common use case, you must fi
 ![number_layer_graph](pics/number_graph.png)  
 
 
-## Combos:    
+## Combos    
 ### Tab, Shift, Caps-Lock, Alpha-Layer...
 Note the Caps-Lock combo only turns Caps-Lock on. Caps-Lock is turned off when a modifier or layer-switching combo is pressed.   
 ![combos](pics/combos_middle_ring.png)  
@@ -28,7 +28,7 @@ Note the Caps-Lock combo only turns Caps-Lock on. Caps-Lock is turned off when a
 ![combos](pics/combos_pointer_pinky_3.png)  
 
 
-## Reset Buttons:  
+## Reset Buttons    
 The small buttons on the top-left-corner and top-right-corner of the keyboard are the Reset Buttons. Press the button on the plugged-in half of the keyboard to Reset the keyboard's state. Note that this is the only way to exit the 2D-Game-Layer and 3D-Game-Layer. You will also use these buttons if and when you flash the CPU with firmware modifications/updates.   
 
 
