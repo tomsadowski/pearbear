@@ -88,6 +88,7 @@ enum layers
     AFM_LYR,   // Alpha From Mouse
     NFA_LYR,   // Number From Alpha
     MFA_LYR,   // Mouse From Alpha
+    AFG_LYR,   // Alpha From Game
 };
 
 // switching to non-alpha layers breaks capsword
@@ -191,86 +192,81 @@ bool process_record_user(uint16_t keycode,
 #define ATN_SPC LT(NFA_LYR, KC_SPC)
 #define NTA_SPC LT(AFN_LYR, KC_SPC)
 #define MTA_SPC LT(AFM_LYR, KC_SPC)
+#define GTA     MO(AFG_LYR)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 {
-[ALPHA_LYR] = LAYOUT_split_3x5_2
-(
+[ALPHA_LYR] = LAYOUT_split_3x5_2(
 KC_K   ,KC_C   ,KC_H   ,KC_B,   KC_X   ,KC_Z   ,KC_Y   ,KC_W   ,KC_P   ,KC_V   ,
 KC_A   ,KC_S   ,KC_R   ,KC_T,   KC_COMM,KC_DOT ,KC_E   ,KC_I   ,KC_O   ,KC_N   ,
 KC_J   ,KC_F   ,KC_L   ,KC_D,   KC_QUOT,KC_SCLN,KC_U   ,KC_M   ,KC_G   ,KC_Q   ,
                         KC_BSPC,ATM_SPC,ATN_SPC,KC_DEL
 ),
-[NUMBE_LYR] = LAYOUT_split_3x5_2
-(
+[NUMBE_LYR] = LAYOUT_split_3x5_2(
 KC_1   ,KC_2   ,KC_3   ,KC_4   ,KC_5   ,KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,
 KC_GRV ,KC_BSLS,KC_SLSH,KC_MINS,_______,_______,KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,
 KC_INS ,KC_LBRC,KC_RBRC,KC_EQL ,_______,_______,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,
                         _______,_______,NTA_SPC,_______
 ),
-[MOUSE_LYR] = LAYOUT_split_3x5_2
-(
+[MOUSE_LYR] = LAYOUT_split_3x5_2(
 KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,
 KC_PSCR,KC_BTN5,KC_BTN4,KC_BTN3,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
 KC_F11 ,KC_F12 ,KC_F13 ,KC_F14 ,_______,_______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,
                         _______,MTA_SPC,KC_BTN1,KC_BTN2
 ),
-[LNAV1_LYR] = LAYOUT_split_3x5_2
-(
+[LNAV1_LYR] = LAYOUT_split_3x5_2(
 _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
 KC_LEFT,KC_UP,  KC_DOWN,KC_RGHT,_______,_______,_______,_______,_______,_______,
 KC_HOME,KC_PGUP,KC_PGDN,KC_END ,_______,_______,_______,_______,_______,_______,
                         _______,KC_SPC, KC_SPC, _______
 ),
-[LNAV2_LYR] = LAYOUT_split_3x5_2
-(
+[LNAV2_LYR] = LAYOUT_split_3x5_2(
 _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
 KC_MS_L,KC_MS_U,KC_MS_D,KC_MS_R,_______,_______,_______,_______,_______,_______,
 KC_WH_L,KC_WH_U,KC_WH_D,KC_WH_R,_______,_______,_______,_______,_______,_______,
                         KC_BTN2,KC_BTN1,KC_SPC ,_______
 ),
-[GAME2_LYR] = LAYOUT_split_3x5_2
-(
-KC_A   ,KC_W   ,KC_S   ,KC_D   ,_______,_______,_______,KC_C   ,_______,_______,
-KC_LEFT,KC_UP,  KC_DOWN,KC_RGHT,KC_0   ,KC_H   ,_______,_______,_______,_______,
-_______,_______,_______,KC_B   ,KC_ESC ,KC_ENT ,_______,_______,_______,_______,
-                        KC_K   ,KC_SPC ,KC_R   ,KC_T
-),
-
-[GAME3_LYR] = LAYOUT_split_3x5_2
-(
+[GAME2_LYR] = LAYOUT_split_3x5_2(
 _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
-_______,_______,_______,_______,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
+_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
 _______,_______,_______,_______,KC_ESC ,KC_ENT ,_______,_______,_______,_______,
-                        _______,KC_SPC ,KC_BTN1,KC_BTN2
+                        KC_1   ,KC_2   ,KC_3   ,KC_4
 ),
-[AFN_LYR] = LAYOUT_split_3x5_2
-(
+[GAME3_LYR] = LAYOUT_split_3x5_2(
+KC_1   ,KC_2   ,KC_3   ,KC_4   ,KC_5   ,KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,
+KC_LEFT,KC_UP,  KC_DOWN,KC_RGHT,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
+KC_INS ,KC_LBRC,KC_RBRC,KC_EQL ,KC_ESC ,KC_ENT ,KC_HOME,KC_WH_D,KC_WH_U,KC_END ,
+                        _______,GTA    ,KC_BTN1,KC_BTN2
+),
+[AFN_LYR] = LAYOUT_split_3x5_2(
 KC_K   ,KC_C   ,KC_H   ,KC_B   ,KC_X   ,KC_Z   ,KC_Y   ,KC_W   ,KC_P   ,KC_V   ,
 KC_A   ,KC_S   ,KC_R   ,KC_T   ,_______,_______,KC_E   ,KC_I   ,KC_O   ,KC_N   ,
 KC_J   ,KC_F   ,KC_L   ,KC_D   ,_______,_______,KC_U   ,KC_M   ,KC_G   ,KC_Q   ,
                         _______,KC_SPC, _______,_______
 ),
-[AFM_LYR] = LAYOUT_split_3x5_2
-(
+[AFM_LYR] = LAYOUT_split_3x5_2(
 KC_K   ,KC_C   ,KC_H   ,KC_B   ,KC_X   ,KC_Z   ,KC_Y   ,KC_W   ,KC_P   ,KC_V   ,
 KC_A   ,KC_S   ,KC_R   ,KC_T   ,_______,_______,KC_E   ,KC_I   ,KC_O   ,KC_N   ,
 KC_J   ,KC_F   ,KC_L   ,KC_D   ,_______,_______,KC_U   ,KC_M   ,KC_G   ,KC_Q   ,
                         _______,_______,ATN_SPC,KC_DEL
 ),
-[NFA_LYR] = LAYOUT_split_3x5_2
-(
+[NFA_LYR] = LAYOUT_split_3x5_2(
 KC_1   ,KC_2   ,KC_3   ,KC_4   ,KC_5   ,KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,
 KC_GRV ,KC_BSLS,KC_SLSH,KC_MINS,_______,_______,KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,
 KC_INS ,KC_LBRC,KC_RBRC,KC_EQL ,_______,_______,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,
                         _______,KC_SPC ,_______,_______
 ),
-[MFA_LYR] = LAYOUT_split_3x5_2
-(
+[MFA_LYR] = LAYOUT_split_3x5_2(
 KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,
 KC_PSCR,KC_BTN5,KC_BTN4,KC_BTN3,_______,_______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,
 KC_F11 ,KC_F12 ,KC_F13 ,KC_F14 ,_______,_______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,
                         _______,_______,KC_BTN1,KC_BTN2
+),
+[AFG_LYR] = LAYOUT_split_3x5_2(
+KC_K   ,KC_C   ,KC_H   ,KC_B   ,KC_X   ,KC_Z   ,KC_Y   ,KC_W   ,KC_P   ,KC_V   ,
+KC_A   ,KC_S   ,KC_R   ,KC_T   ,_______,_______,KC_E   ,KC_I   ,KC_O   ,KC_N   ,
+KC_J   ,KC_F   ,KC_L   ,KC_D   ,_______,_______,KC_U   ,KC_M   ,KC_G   ,KC_Q   ,
+                        _______,_______,KC_SPC ,KC_DEL
 ),
 };
 
@@ -301,3 +297,21 @@ bool get_hold_on_other_key_press(uint16_t keycode,
             return false;
     }
 }
+
+//  // Disable CAPS_CMB_L on GAME3_LYR
+//  bool combo_should_trigger(uint16_t combo_index,
+//                            combo_t *combo,
+//                            uint16_t keycode,
+//                            keyrecord_t *record) {
+//      switch (combo_index) {
+//          case CAPS_CMB_L:
+//              if (layer_state_is(GAME3_LYR) || layer_state_is(AFG_LYR)) {
+//                  return false;
+//              }
+//          case GAME2_CMB_L:
+//              if (layer_state_is(GAME3_LYR) || layer_state_is(AFG_LYR)) {
+//                  return false;
+//              }
+//      }
+//      return true;
+//  }

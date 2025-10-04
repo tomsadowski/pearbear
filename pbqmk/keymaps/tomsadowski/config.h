@@ -32,6 +32,7 @@
 #define COMBO_STRICT_TIMER
 #define COMBO_ONLY_FROM_LAYER 0
 #define COMBO_TERM 32
+#define COMBO_SHOULD_TRIGGER
 
 // capsword
 #define CAPS_WORD_INVERT_ON_SHIFT
