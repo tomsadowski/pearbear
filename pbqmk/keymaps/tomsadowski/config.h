@@ -7,8 +7,7 @@
 // oneshot
 #define NO_ACTION_ONESHOT
 
-// layer
-#define LAYER_STATE_16BIT
+#define LAYER_STATE_32BIT
 
 // mousekey
 #define MOUSEKEY_INERTIA
