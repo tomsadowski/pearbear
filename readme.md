@@ -20,10 +20,8 @@
   * e) 34x [XDA Keycaps](https://ymdkey.com/products/xda-1u-new-keycapsblank-pbt-1-55mm)
   * f) Substrate
     * 1x Mousepad
-    * 12x M2 screws
-    * 12x M2 hex nuts
-    * Needle and thread  
+    * gorilla glue
 4) Assembly
   * 1) Solder 3.a - 3.d to PCB (beginners guide pending)
-  * 2) Stitch mousepad to PCB using 3.e
-5) Flash microcontrollers with [QMK firmware](pbqmk)
+  * 2) Cut the mousepad into strips and glue the strips along the bottom of the PCB
+5) Flash microcontrollers with qmk_firmware
